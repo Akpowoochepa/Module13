@@ -10,7 +10,7 @@ class TimeTest(unittest.TestCase):
     # Time series Test
     def test_time_series_option(self):
         result = get_time_series_option()
-        self.assertIn(result, {1})
+        self.assertEqual(result, 1)
 
     def test_time_series_option1(self):
         result = get_time_series_option()
